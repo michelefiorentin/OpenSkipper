@@ -65,9 +65,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDefns)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.n0183DefnBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
@@ -90,11 +92,12 @@
             this.dgvDefns.DataSource = this.n0183DefnBindingSource;
             this.dgvDefns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDefns.Location = new System.Drawing.Point(0, 0);
+            this.dgvDefns.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDefns.MultiSelect = false;
             this.dgvDefns.Name = "dgvDefns";
             this.dgvDefns.RowHeadersVisible = false;
             this.dgvDefns.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDefns.Size = new System.Drawing.Size(347, 458);
+            this.dgvDefns.Size = new System.Drawing.Size(462, 565);
             this.dgvDefns.TabIndex = 0;
             this.dgvDefns.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDefns_CellValueChanged);
             this.dgvDefns.SelectionChanged += new System.EventHandler(this.dgvDefns_SelectionChanged);
@@ -126,22 +129,25 @@
             // 
             this.tableLayoutPanel2.SetColumnSpan(this.pgField, 2);
             this.pgField.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgField.Location = new System.Drawing.Point(3, 33);
+            this.pgField.Location = new System.Drawing.Point(4, 41);
+            this.pgField.Margin = new System.Windows.Forms.Padding(4);
             this.pgField.Name = "pgField";
             this.pgField.PropertySort = System.Windows.Forms.PropertySort.Alphabetical;
-            this.pgField.Size = new System.Drawing.Size(368, 203);
+            this.pgField.Size = new System.Drawing.Size(492, 250);
             this.pgField.TabIndex = 2;
             this.pgField.ToolbarVisible = false;
             this.pgField.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.pgField_PropertyValueChanged);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(725, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(967, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,39 +160,39 @@
             this.toolStripSeparator2,
             this.closeToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openN0183DefinitionsToolStripMenuItem
             // 
             this.openN0183DefinitionsToolStripMenuItem.Name = "openN0183DefinitionsToolStripMenuItem";
-            this.openN0183DefinitionsToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.openN0183DefinitionsToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.openN0183DefinitionsToolStripMenuItem.Text = "Open Definitions...";
             this.openN0183DefinitionsToolStripMenuItem.Click += new System.EventHandler(this.openN0183DefinitionsToolStripMenuItem_Click);
             // 
             // saveDefinitionsToolStripMenuItem
             // 
             this.saveDefinitionsToolStripMenuItem.Name = "saveDefinitionsToolStripMenuItem";
-            this.saveDefinitionsToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.saveDefinitionsToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.saveDefinitionsToolStripMenuItem.Text = "Save Definitions";
             this.saveDefinitionsToolStripMenuItem.Click += new System.EventHandler(this.saveDefinitionsToolStripMenuItem_Click);
             // 
             // saveDefnsAstoolStripMenuItem
             // 
             this.saveDefnsAstoolStripMenuItem.Name = "saveDefnsAstoolStripMenuItem";
-            this.saveDefnsAstoolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.saveDefnsAstoolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.saveDefnsAstoolStripMenuItem.Text = "Save Definitions As...";
             this.saveDefnsAstoolStripMenuItem.Click += new System.EventHandler(this.saveDefnsAstoolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(180, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(217, 6);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -199,46 +205,47 @@
             this.deleteFieldToolStripMenuItem,
             this.deleteDefinitionToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // addFieldToolStripMenuItem
             // 
             this.addFieldToolStripMenuItem.Name = "addFieldToolStripMenuItem";
-            this.addFieldToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.addFieldToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.addFieldToolStripMenuItem.Text = "Add Field";
             this.addFieldToolStripMenuItem.Click += new System.EventHandler(this.addFieldToolStripMenuItem_Click);
             // 
             // addDefinitionToolStripMenuItem
             // 
             this.addDefinitionToolStripMenuItem.Name = "addDefinitionToolStripMenuItem";
-            this.addDefinitionToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.addDefinitionToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.addDefinitionToolStripMenuItem.Text = "Add Definition";
             this.addDefinitionToolStripMenuItem.Click += new System.EventHandler(this.addDefinitionToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(159, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(195, 6);
             // 
             // deleteFieldToolStripMenuItem
             // 
             this.deleteFieldToolStripMenuItem.Name = "deleteFieldToolStripMenuItem";
-            this.deleteFieldToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.deleteFieldToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.deleteFieldToolStripMenuItem.Text = "Delete Field";
             this.deleteFieldToolStripMenuItem.Click += new System.EventHandler(this.deleteFieldToolStripMenuItem_Click);
             // 
             // deleteDefinitionToolStripMenuItem
             // 
             this.deleteDefinitionToolStripMenuItem.Name = "deleteDefinitionToolStripMenuItem";
-            this.deleteDefinitionToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.deleteDefinitionToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.deleteDefinitionToolStripMenuItem.Text = "Delete Definition";
             this.deleteDefinitionToolStripMenuItem.Click += new System.EventHandler(this.deleteDefinitionToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 24);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 28);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -248,14 +255,16 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(725, 458);
-            this.splitContainer1.SplitterDistance = 347;
+            this.splitContainer1.Size = new System.Drawing.Size(967, 565);
+            this.splitContainer1.SplitterDistance = 462;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 3;
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -266,8 +275,9 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer2.Size = new System.Drawing.Size(374, 458);
-            this.splitContainer2.SplitterDistance = 215;
+            this.splitContainer2.Size = new System.Drawing.Size(500, 565);
+            this.splitContainer2.SplitterDistance = 265;
+            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -278,11 +288,12 @@
             this.tableLayoutPanel1.Controls.Add(this.lblFields, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(374, 215);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(500, 265);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // dgvFields
@@ -298,12 +309,13 @@
             this.FieldType});
             this.dgvFields.DataSource = this.n0183FieldBindingSource;
             this.dgvFields.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvFields.Location = new System.Drawing.Point(3, 33);
+            this.dgvFields.Location = new System.Drawing.Point(4, 41);
+            this.dgvFields.Margin = new System.Windows.Forms.Padding(4);
             this.dgvFields.MultiSelect = false;
             this.dgvFields.Name = "dgvFields";
             this.dgvFields.RowHeadersVisible = false;
             this.dgvFields.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFields.Size = new System.Drawing.Size(368, 179);
+            this.dgvFields.Size = new System.Drawing.Size(492, 220);
             this.dgvFields.TabIndex = 2;
             this.dgvFields.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFields_CellValueChanged);
             this.dgvFields.SelectionChanged += new System.EventHandler(this.dgvFields_SelectionChanged);
@@ -343,10 +355,10 @@
             this.lblFields.AutoSize = true;
             this.lblFields.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFields.Location = new System.Drawing.Point(3, 3);
-            this.lblFields.Margin = new System.Windows.Forms.Padding(3);
+            this.lblFields.Location = new System.Drawing.Point(4, 4);
+            this.lblFields.Margin = new System.Windows.Forms.Padding(4);
             this.lblFields.Name = "lblFields";
-            this.lblFields.Size = new System.Drawing.Size(108, 24);
+            this.lblFields.Size = new System.Drawing.Size(136, 29);
             this.lblFields.TabIndex = 3;
             this.lblFields.Text = "No Code selected";
             this.lblFields.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,18 +367,19 @@
             // 
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
             this.tableLayoutPanel2.Controls.Add(this.pgField, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lblProperties, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.comboTypes, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(374, 239);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(500, 295);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // lblProperties
@@ -374,10 +387,10 @@
             this.lblProperties.AutoSize = true;
             this.lblProperties.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblProperties.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProperties.Location = new System.Drawing.Point(3, 3);
-            this.lblProperties.Margin = new System.Windows.Forms.Padding(3);
+            this.lblProperties.Location = new System.Drawing.Point(4, 4);
+            this.lblProperties.Margin = new System.Windows.Forms.Padding(4);
             this.lblProperties.Name = "lblProperties";
-            this.lblProperties.Size = new System.Drawing.Size(218, 24);
+            this.lblProperties.Size = new System.Drawing.Size(292, 29);
             this.lblProperties.TabIndex = 3;
             this.lblProperties.Text = "No Field selected";
             this.lblProperties.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -388,34 +401,38 @@
             this.comboTypes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comboTypes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboTypes.FormattingEnabled = true;
-            this.comboTypes.Location = new System.Drawing.Point(227, 3);
+            this.comboTypes.Location = new System.Drawing.Point(304, 4);
+            this.comboTypes.Margin = new System.Windows.Forms.Padding(4);
             this.comboTypes.Name = "comboTypes";
-            this.comboTypes.Size = new System.Drawing.Size(144, 21);
+            this.comboTypes.Size = new System.Drawing.Size(192, 24);
             this.comboTypes.TabIndex = 4;
-            this.comboTypes.SelectionChangeCommitted += new System.EventHandler(this.comboTypes_SelectionChangeCommitted);
             this.comboTypes.SelectedIndexChanged += new System.EventHandler(this.comboTypes_SelectedIndexChanged);
+            this.comboTypes.SelectionChangeCommitted += new System.EventHandler(this.comboTypes_SelectionChangeCommitted);
             // 
             // N0183ExplorerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 482);
+            this.ClientSize = new System.Drawing.Size(967, 593);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "N0183ExplorerForm";
             this.Text = "NMEA 0183 Explorer";
-            this.Load += new System.EventHandler(this.N0183ExplorerForm_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.N0183ExplorerForm_FormClosing);
+            this.Load += new System.EventHandler(this.N0183ExplorerForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDefns)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.n0183DefnBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

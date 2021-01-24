@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OpenSkipperApplication</RootNamespace>
     <AssemblyName>OpenSkipper</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetZone>LocalIntranet</TargetZone>
     <GenerateManifests>true</GenerateManifests>
@@ -22,7 +22,8 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -433,6 +434,13 @@
     <Content Include="ApplicationIcon.ico" />
     <EmbeddedResource Include="Resources\Manufacturers.N2kDfn.xml" />
     <EmbeddedResource Include="Resources\ClassAndFunction.N2kDfn.xml" />
+    <Content Include="Resources\AGauge.bmp" />
+    <Content Include="Resources\Displays.xml" />
+    <Content Include="Resources\Display_Battery.xml" />
+    <Content Include="Resources\Display_Dials.xml" />
+    <Content Include="Resources\Display_Motor.xml" />
+    <Content Include="Resources\Display_Steer.xml" />
+    <Content Include="Resources\Display_Tanks.xml" />
     <Content Include="Resources\Pause.ico" />
     <Content Include="Resources\Play.ico" />
     <Content Include="Resources\Rewind.ico" />
